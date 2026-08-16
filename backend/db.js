@@ -1,11 +1,3 @@
-/
-  --------------------------------------------------
-  Ei project e amra kono MySQL/XAMPP use korchi na.
-  Erokom-e JSON file gulo-i amader "database" hishebe
-  kaj korbe. Ei file e shudhu read/write helper function
-  gula ache, ja server.js theke call kora hobe.
---------------------------------------------------
-*/
 
 const fs = require("fs");
 const path = require("path");
