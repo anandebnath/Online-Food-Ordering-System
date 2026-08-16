@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Placed | Tasty Bites</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">🍔 Tasty Bites</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cart.html">Cart <span class="cart-badge" id="cartCount">0</span></a></li>
+      <li id="authLink"><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <div class="container" style="text-align:center; padding:100px 20px;">
+    <h1 style="color:#2e7d32; font-size:36px;">✅ Order Placed Successfully!</h1>
+    <p style="margin:16px 0; color:#555;">Thank you for your order. Your delicious food is on its way!</p>
+    <p id="orderIdMsg" style="color:#777; font-size:14px; margin-bottom:20px;"></p>
+    <a href="index.html" class="btn">Back to Menu</a>
+  </div>
+
+  <footer>
+    &copy; 2026 Tasty Bites Online Food Ordering System. All rights reserved by Anan & Sana.
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    const lastOrder = JSON.parse(sessionStorage.getItem("lastOrder"));
+    if (lastOrder) {
+      document.getElementById("orderIdMsg").textContent =
+        `Order #${lastOrder.id} — saved to database. Payment: ${lastOrder.paymentMethod} (${lastOrder.paymentStatus})`;
+    }
+  </script>
+</body>
+</html>
