@@ -1,5 +1,4 @@
-/*
-  db.js
+/
   --------------------------------------------------
   Ei project e amra kono MySQL/XAMPP use korchi na.
   Erokom-e JSON file gulo-i amader "database" hishebe

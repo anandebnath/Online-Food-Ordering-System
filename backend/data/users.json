@@ -12,5 +12,12 @@
     "email": "anan242-35-635@diu.edu.bd",
     "password": "anan1234",
     "role": "user"
+  },
+  {
+    "id": 3,
+    "name": "sana",
+    "email": "sana@gmail.com",
+    "password": "123456",
+    "role": "user"
   }
 ]
