@@ -9,7 +9,6 @@ if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR, { recursive: true });
 }
 
-// Generic function: JSON file theke data read kora
 function readData(fileName) {
   const filePath = path.join(DATA_DIR, fileName);
   if (!fs.existsSync(filePath)) {
