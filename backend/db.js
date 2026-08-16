@@ -44,5 +44,4 @@ function writeData(fileName, data) {
   }
 }
 
-//sana
 module.exports = { readData, writeData };
