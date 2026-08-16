@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart | Tasty Bites</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <div class="logo">🍔 Tasty Bites</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cart.html">Cart <span class="cart-badge" id="cartCount">0</span></a></li>
+      <li id="authLink"><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Shopping cart and checkout section -->
+  <div class="container">
+    <h2 class="section-title">Your Cart</h2>
+    <div id="cartItems"></div>
+
+    <!-- Cart summary and delivery details -->
+    <div class="cart-summary" id="cartSummary" style="display:none;">
+      <div class="total-row">
+        <span>Total:</span>
+        <span id="cartTotal">৳0</span>
+      </div>
+
+      <h3 style="margin-bottom:14px;">Delivery Details</h3>
+      <form id="checkoutForm">
+        <div class="form-group">
+          <label for="custName">Full Name</label>
+          <input type="text" id="custName" required>
+        </div>
+        <div class="form-group">
+          <label for="custEmail">Email</label>
+          <input type="email" id="custEmail" required>
+        </div>
+        <div class="form-group">
+          <label for="custPhone">Phone Number</label>
+          <input type="text" id="custPhone" required>
+        </div>
+        <div class="form-group">
+          <label for="custAddress">Delivery Address</label>
+          <textarea id="custAddress" rows="3" required></textarea>
+        </div>
+
+        <!-- Payment method selection -->
+        <h3 style="margin:20px 0 12px;">Payment Method</h3>
+        <div class="payment-options">
+          <label class="payment-option">
+            <input type="radio" name="paymentMethod" value="Cash on Delivery" checked onchange="togglePaymentFields()">
+            <span>💵 Cash on Delivery</span>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="paymentMethod" value="Card" onchange="togglePaymentFields()">
+            <span>💳 Credit / Debit Card</span>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="paymentMethod" value="Mobile Banking" onchange="togglePaymentFields()">
+            <span>📱 bKash / Nagad</span>
+          </label>
+        </div>
+
+        <!-- Card payment fields (shown only when Card is selected) -->
+        <div id="cardFields" style="display:none;">
+          <div class="form-group">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+          </div>
+          <div style="display:flex; gap:12px;">
+            <div class="form-group" style="flex:1;">
+              <label for="cardExpiry">Expiry (MM/YY)</label>
+              <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5">
+            </div>
+            <div class="form-group" style="flex:1;">
+              <label for="cardCvv">CVV</label>
+              <input type="text" id="cardCvv" placeholder="123" maxlength="3">
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile banking field (shown only when Mobile Banking is selected) -->
+        <div id="mobileFields" style="display:none;">
+          <div class="form-group">
+            <label for="mobileNumber">bKash / Nagad Number</label>
+            <input type="text" id="mobileNumber" placeholder="01XXXXXXXXX" maxlength="11">
+          </div>
+        </div>
+
+        <!-- Button for submitting the order -->
+        <button type="submit" class="btn">Place Order</button>
+        <p id="formMsg"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Website footer -->
+  <footer>
+    &copy; 2026 Tasty Bites Online Food Ordering System. All rights reserved by Anan & Sana.
+  </footer>
+
+  <!-- JavaScript files for general and cart functionality -->
+  <script src="js/script.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
