@@ -4,7 +4,7 @@ const path = require("path");
 
 const DATA_DIR = path.join(__dirname, "data");
 
-// data/ folder na thakle taka toiri kora (fresh clone er khetre lagbe)
+// data
 if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR, { recursive: true });
 }
