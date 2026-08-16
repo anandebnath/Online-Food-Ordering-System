@@ -22,7 +22,7 @@ function readData(fileName) {
   }
 }
 
-// Generic function: JSON file e data write kora
+
 function writeData(fileName, data) {
   const filePath = path.join(DATA_DIR, fileName);
   try {
