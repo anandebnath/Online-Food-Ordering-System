@@ -31,6 +31,3 @@ cd backend
 npm install
 npm start
 ```
-Then open: **http://localhost:5000**
-
-Admin login: `admin@food.com` / `admin123`

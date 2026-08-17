@@ -145,5 +145,53 @@
     "paymentStatus": "Paid",
     "status": "Pending",
     "date": "8/17/2026, 4:08:34 AM"
+  },
+  {
+    "id": 7,
+    "customerName": "Anan Debnath",
+    "email": "anandeb842@gmail.com",
+    "phone": "01234567890",
+    "address": "32, Shankar",
+    "items": [
+      {
+        "id": 2,
+        "name": "Beef Burger",
+        "category": "Fast Food",
+        "price": 180,
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400",
+        "description": "Juicy beef patty with cheese, lettuce and special sauce.",
+        "qty": 1
+      }
+    ],
+    "totalPrice": 180,
+    "paymentMethod": "Cash on Delivery",
+    "paymentDetails": {},
+    "paymentStatus": "Unpaid",
+    "status": "Pending",
+    "date": "8/17/2026, 10:18:24 AM"
+  },
+  {
+    "id": 8,
+    "customerName": "Anan Debnath",
+    "email": "anandeb842@gmail.com",
+    "phone": "01234567890",
+    "address": "32, Shankar",
+    "items": [
+      {
+        "id": 3,
+        "name": "Margherita Pizza",
+        "category": "Pizza",
+        "price": 350,
+        "image": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=400",
+        "description": "Classic pizza with fresh mozzarella, tomato and basil.",
+        "qty": 1
+      }
+    ],
+    "totalPrice": 350,
+    "paymentMethod": "Cash on Delivery",
+    "paymentDetails": {},
+    "paymentStatus": "Unpaid",
+    "status": "Pending",
+    "date": "8/17/2026, 10:40:12 AM"
   }
 ]
